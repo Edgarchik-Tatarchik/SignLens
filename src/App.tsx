@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useAuth } from './hooks/useAuth'
+import { SplashScreen } from './components/SplashScreen'
 import HomePage from './pages/HomePage'
 import { ScanPage } from './pages/ScanPage'
 import { SavedScansPage } from './pages/SavedScansPage'
@@ -12,6 +13,9 @@ type AppScreen = 'home' | 'scan' | 'saved' | 'quiz' | 'settings' | 'stats' | 'ma
 
 function App() {
   useAuth()
+
+  const [showSplash, setShowSplash] = useState(true)
+
   const initialScreen = (): AppScreen => {
     const params = new URLSearchParams(window.location.search)
     const s = params.get('screen')
@@ -20,6 +24,10 @@ function App() {
   }
 
   const [screen, setScreen] = useState<AppScreen>(initialScreen)
+
+  if (showSplash) {
+    return <SplashScreen onFinish={() => setShowSplash(false)} />
+  }
 
   if (screen === 'home') return (
     <HomePage
