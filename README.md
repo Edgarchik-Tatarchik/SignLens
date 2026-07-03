@@ -1,8 +1,13 @@
 # SnapGO / スナップ語
-**写真で日本語を学ぶPWAアプリ — v1.1.0**  
+**写真で日本語を学ぶPWAアプリ — v1.3.0**  
 **A PWA for learning Japanese through real-world photos**
 
 🔗 **Live Demo:** [snap-go-alpha.vercel.app](https://snap-go-alpha.vercel.app)
+*iPhoneをご利用の場合は、Safariブラウザで下記のリンクを開き、「」ホーム画面に追加」してご利用いただくことをおすすめです。
+PWA(Progressive Web App)として動作するため、ホーム画面に追加することで、アプリのすべての機能をご利用いただけます。
+
+*If you're using an iPhone, I recommend opening the link below in Safari and adding it to your Home Screen.
+Since the app runs as a Progressive Web App (PWA), addint it to your Home Screen ensures you have access to all the features.
 
 ---
 
